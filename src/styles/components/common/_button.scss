@@ -1,0 +1,27 @@
+.button {
+  border: none;
+  text-decoration: none;
+  outline: none;
+  padding: 12px 24px;
+  @include text($H300, 300, $white);
+  background-color: $header-btn-color;
+  text-transform: uppercase;
+  @include flex(center, center);
+  width: 100%;
+  text-align: center;
+  transition: all 0.2s ease;
+  @media screen and (min-width: $screen-tablet) {
+    width: fit-content;
+  }
+  @media screen and (min-width: $screen-desktop) {
+    &:hover {
+      box-shadow: 0 2px 5px 0 rgba(black, 0.5);
+    }
+  }
+  &--header {
+    background-color: $header-btn-color;
+  }
+  &--gallery {
+    background-color: $gallery-btn-color;
+  }
+}

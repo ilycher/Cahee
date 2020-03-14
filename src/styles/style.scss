@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico|Raleway:300,400,700,800&display=swap');
+
+// Core
+@import './core/vars';
+@import './core/inheritance';
+@import './core/mixins';
+@import './core/common';
+
+// Common components
+@import './components/common/button';
+@import './components/common/scroll';
+@import './components/common/burger';
+@import './components/common/link-card';
+@import './components/common/logo';
+@import './components/common/navigation';
+@import './components/common/photo-grid';
+
+// Components
+@import './components/header';
+@import './components/section-about';
+@import './components/section-services';
+@import './components/section-gallery';

@@ -1,0 +1,24 @@
+.section-gallery {
+  background-color: $gallery-bg-color;
+  &__container {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  &__title {
+    @include text($H900, 700);
+    margin-bottom: 22px;
+    text-align: center;
+  }
+  &__description {
+    @include text($H200);
+    text-align: center;
+    max-width: 580px;
+    margin: 0 auto 32px;
+  }
+  &__grid {
+    margin-bottom: 32px;
+  }
+  &__button {
+    @extend %center;
+  }
+}

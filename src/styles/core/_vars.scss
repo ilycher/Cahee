@@ -1,0 +1,56 @@
+// Natural colors
+$white: white;
+$grey-light: #B9B9B9;
+$grey: #9D9D9D;
+$dark: #262626;
+
+// Bacground colors
+$about-bg-color: #00C4C4;
+$service-bg-color: #70BFFF;
+$gallery-bg-color: #FFE92F;
+$subscribe-bg-color: white;
+$blog-bg-color: #B07CF7;
+$footer-bg-color: #262626;
+
+// Button colors
+$header-btn-color: #FF6033;
+$gallery-btn-color: #5585A2;
+$subscribe-btn-color: #96B92C;
+$blog-btn-color: #F72B3B;
+
+// Text colors
+$text-main-color: #262626;
+$text-marked-color: #FF2B58;
+
+@function calcRem($size) {
+  $remSize: $size / 16px;
+  @return #{$remSize}rem;
+}
+
+$logo-fs: calcRem(50px);
+
+$H900: calcRem(90px);
+$H800: calcRem(60px);
+$H700: calcRem(40px);
+$H600: calcRem(32px);
+$H500: calcRem(25px);
+$H400: calcRem(21px);
+$H300: calcRem(20px);
+$H200: calcRem(17px);
+$H100: calcRem(16px);
+$H50: calcRem(15px);
+$H10: calcRem(13px);
+
+$base-font: 'Raleway';
+$logo-font: 'Pacifico';
+
+$max-width: 1200px;
+
+$screen-iphone: 375px;
+$screen-iphone-plus: 414px;
+$screen-tablet: 768px;
+$screen-desktop: 1024px;
+$screen-desktop-large: 1280px;
+$screen-hd: 1366px;
+$screen-fullhd: 1440px;
+$screen-retina: 1660px;

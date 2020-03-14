@@ -1,0 +1,52 @@
+.section-services {
+  background-color: $service-bg-color;
+  @extend %section;
+  &__container {
+    @include flex(flex-start, stretch, column);
+    padding-top: 70px;
+    padding-bottom: 70px;
+    @media screen and (min-width: $screen-desktop) {
+      flex-direction: row;
+    }
+  }
+  &__picture-side {
+    @include flex(center, center);
+    position: relative;
+    width: 100%;
+    @include padding-hack(100%);
+    @media screen and (min-width: $screen-desktop) {
+      width: 50%;
+      padding-bottom: 46%;
+    }
+  }
+  &__content-side {
+    width: 100%;
+    @include flex(center, center, column);
+    margin-bottom: 32px;
+    @media screen and (min-width: $screen-desktop) {
+      width: 50%;
+      align-items: flex-start;
+      margin-bottom: 0;
+    }
+  }
+  &__title {
+    @include text($H800, 700, $white);
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    transform: translateY(-50%);
+    z-index: 2;
+    @media screen and (min-width: $screen-desktop) {
+      font-size: $H900;
+    }
+  }
+  &__list {
+    width: 100%;
+    list-style: none;
+  }
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+}

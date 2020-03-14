@@ -1,0 +1,5 @@
+node_modules/
+tmp/
+temp/
+package-lock.json
+cahee.psd
